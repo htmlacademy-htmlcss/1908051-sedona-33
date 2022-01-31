@@ -8,8 +8,10 @@
   <body>
     <header class="page-header">
       <div class="container">
+
+      <!-- Лого -->
       <a class="header-sedona-logo" href="index.html">
-       <img class="logo" src="" alt="Логотип Седоны">
+       <img class="logo" src="images/logo_sedona.svg" width="139" height="70" alt="Логотип Седоны">
       </a>
        <nav class="navigation">
           <ul class="navigation-list">
@@ -46,6 +48,7 @@
       </div>
     </header>
 
+    <!-- Гостиницы -->
     <main class="main-inner">
       <div class="container">
         <header class="inner-header">
@@ -120,13 +123,15 @@
               </fieldset>
 
               <button class="button" type="submit">Применить</button>
-              <button class="button" type="submit">Сбросить</button>
+              <button class="button" type="reset">Сбросить</button>
           </form>
 
         </div>
 
+        <!-- Результаты поиска -->
         <section class="hotels-search">
-          <h2 class="hotels-search-title">Найдено гостиниц: 38</h2>
+          <h2 class="visually-hidden">Результаты поиска</h2>
+          <p>Найдено гостиниц: 38</p>
 
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
@@ -146,7 +151,7 @@
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/amara_resort.jpg" width="299" height="206" alt="Amara Resort & Spa">
                 <h3 class="product-card-title">Amara Resort & Spa</h3>
               </a>
               <span class="product-card-type">Гостиница</span>
@@ -157,7 +162,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/desert_quail_inn.jpg" width="299" height="206" alt="Desert Quail Inn">
                 <h3 class="product-card-title">Desert Quail Inn</h3>
               </a>
               <span class="product-card-type">Гостиница</span>
@@ -168,7 +173,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/villas_at_poco_diablo.jpg" width="299" height="206" alt="Villas at Poco Diablo">
                 <h3 class="product-card-title">Villas at Poco Diablo</h3>
               </a>
               <span class="product-card-type">Гостиница</span>
@@ -179,7 +184,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-link" href="#">
-                <img class="product-card-image" src="" alt="">
+                <img class="product-card-image" src="images/greentree_inn.jpg" width="299" height="206" alt="GreenTree Inn">
                 <h3 class="product-card-title">GreenTree Inn</h3>
               </a>
               <span class="product-card-type">Гостиница</span>
@@ -189,7 +194,7 @@
               <span class="product-card-rating">Рейтинг: 9,2</span>
             </li>
           </ul>
-          <button class="button" type="submit">Загрузить ещё</button>
+          <a class="button" href="#">Загрузить ещё</a>
 
           <ul class="pagination">
             <li class="pagination-item">
@@ -204,20 +209,8 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">4</a>
             </li>
-            <li class="pagination-item" hidden>
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item" hidden>
-              <a class="pagination-link" href="#">6</a>
-            </li>
-            <li class="pagination-item" hidden>
-              <a class="pagination-link" href="#">7</a>
-            </li>
-            <li class="pagination-item" hidden>
-              <a class="pagination-link" href="#">8</a>
-            </li>
-            <li class="pagination-item" hidden>
-              <a class="pagination-link" href="#">9</a>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
@@ -234,6 +227,7 @@
 
         </section>
 
+        <!-- Форма подписки -->
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -246,6 +240,7 @@
       </div>
     </main>
 
+    <!-- Футер -->
     <footer class="page-footer">
       <div class="container">
         <div class="footer-social">
@@ -274,7 +269,7 @@
 
         <div class="footer-academy">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-              <img class="footer-academy-logo" src="" alt="Логотип html-academy">
+              <img class="footer-academy-logo" src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html-academy">
             </a>
         </div>
       </div>
