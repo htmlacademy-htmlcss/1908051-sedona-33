@@ -55,12 +55,67 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.button-blue-small {
+  background-color: #83B3D3;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product-card-button-bag-hover button {
+  background-color: #83B3D3;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product-card-button button {
+  background-color: #756257;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product-card-button-bag-active button {
+  background-color: #7DB54F;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+
+.button reset {
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 /* Pages */
 
 .page-header {
   color: #000000;
   background-color: #ffffff;
 }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  color: #ffffff;
+}
+
+/* Link */
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: none;
+}
+
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -82,6 +137,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.container-inner {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../images/catalog-background.jpg");
+  background-size: width="1200" height="408";
+  background-repeat: no-repeat;
+
+}
 
 /* Title*/
 
@@ -131,6 +194,47 @@ body {
   background-color: #83B3D3;
 }
 
+
+
+
+.catalog-filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.product-card-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  background-color: #000000;
+
+}
+
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
 /* Search*/
 
 .search {
@@ -151,10 +255,17 @@ body {
 .newsletter {
   text-align: center;
   color: #ffffff;
-  background-color: #83B3D3;
+  background-color: #000000;
   background-image: url("../images/newsletter_background.jpg");
   background-size: width="1200" height="411";
   background-repeat: no-repeat;
+}
+
+.newsletter-inner {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+
 }
 
 .newsletter-title {
@@ -166,6 +277,17 @@ body {
   text-transform: uppercase;
 }
 
+.newsletter-title-inner {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* Footer*/
+
 .page-footer {
   text-align: center;
 }
@@ -175,3 +297,23 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
+
+
+/* Link */
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  text-decoration: none;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -51,8 +52,9 @@
     <!-- Гостиницы -->
     <main class="main-inner">
       <div class="container">
+        <div class="container-inner">
         <header class="inner-header">
-          <h1 class="inner-header-title">Каталог</h1>
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -122,10 +124,10 @@
                 </ul>
               </fieldset>
 
-              <button class="button" type="submit">Применить</button>
+              <button class="button button-blue-small" type="submit">Применить</button>
               <button class="button" type="reset">Сбросить</button>
           </form>
-
+        </div>
         </div>
 
         <!-- Результаты поиска -->
@@ -157,7 +159,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 4000 ₽</span>
               <a class="product-card-button button" href="#">Подробнее</a>
-              <a class="product-card-button-bag button" href="#">Избранное</a>
+              <a class="product-card-button-bag button" href="#">В избранное</a>
               <span class="product-card-rating">Рейтинг: 8,5</span>
             </li>
             <li class="product-card">
@@ -168,7 +170,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 3000 ₽</span>
               <a class="product-card-button button" href="#">Подробнее</a>
-              <a class="product-card-button-bag button" href="#">Избранное</a>
+              <a class="product-card-button-bag button" href="#">В избранное</a>
               <span class="product-card-rating">Рейтинг: 8,9</span>
             </li>
             <li class="product-card">
@@ -179,7 +181,7 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 2000 ₽</span>
               <a class="product-card-button button" href="#">Подробнее</a>
-              <a class="product-card-button-bag-hover button" href="#">Избранное</a>
+              <a class="product-card-button-bag-active button" href="#">В избранном</a>
               <span class="product-card-rating">Рейтинг: 9,5</span>
             </li>
             <li class="product-card">
@@ -190,11 +192,11 @@
               <span class="product-card-type">Гостиница</span>
               <span class="product-card-price">От 3000 ₽</span>
               <a class="product-card-button button" href="#">Подробнее</a>
-              <a class="product-card-button-bag button" href="#">Избранное</a>
+              <a class="product-card-button-bag button" href="#">В избранное</a>
               <span class="product-card-rating">Рейтинг: 9,2</span>
             </li>
           </ul>
-          <a class="button" href="#">Загрузить ещё</a>
+          <a class="button button-blue" href="#">Загрузить ещё</a>
 
           <ul class="pagination">
             <li class="pagination-item">
@@ -228,8 +230,8 @@
         </section>
 
         <!-- Форма подписки -->
-        <section class="newsletter">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <section class="newsletter-inner">
+          <h2 class="newsletter-title-inner">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
