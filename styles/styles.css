@@ -1,3 +1,14 @@
+:root {
+  --basic-color-white: #ffffff;
+  --basic-color-black: #000000;
+  --accent-colour-blue: #83B3D3;
+  --accent-colour-extra-light-blue :rgba(131, 179, 211, 0.12);
+  --accent-colour-light-blue: rgba(131, 179, 211, 0.2);
+  --accent-colour-gray: #F2F2F2;
+  --accent-colour-brown: #756257;
+  --accent-colour-green: #7DB54F;
+}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -29,13 +40,28 @@
   font-display: swap;
 }
 
+
+html {
+  height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: var(--basic-color-black);
   background-color: var(--basic-color-white);
 }
+
+/* Buttons */
 
 .button {
   font-family: inherit;
@@ -79,7 +105,6 @@ body {
   font-size: 16px;
 }
 
-
 .button reset {
   font-size: 18px;
   line-height: 23px;
@@ -87,18 +112,32 @@ body {
   text-decoration: none;
 }
 
-:root {
-  --basic-color-white: #ffffff;
-  --basic-color-black: #000000;
-  --accent-colour-blue: #83B3D3;
-  --accent-colour-extra-light-blue :rgba(131, 179, 211, 0.12);
-  --accent-colour-light-blue: rgba(131, 179, 211, 0.2);
-  --accent-colour-gray: #F2F2F2;
-  --accent-colour-brown: #756257;
-  --accent-colour-green: #7DB54F;
+
+/* Navigation */
+
+.header-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
 }
 
 /* Link */
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+}
+
+.navigation-user {
+  max-width: 280px;
+  margin-left: auto;
+}
 
 .navigation-link {
   font-size: 20px;
@@ -111,6 +150,7 @@ body {
 }
 
 
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -120,6 +160,11 @@ body {
   text-decoration: none;
 }
 
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .main-index {
   background-image: url("../images/index-background.jpg");
@@ -150,10 +195,15 @@ body {
 
 /* List */
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
 .advantages-item {
+  width: 400px;
   color: var(--basic-color-white);
   background-color: var(--accent-colour-blue);
 }
@@ -261,8 +311,29 @@ body {
 
 /* Footer*/
 
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .page-footer {
   text-align: center;
+}
+
+.footer-social {
+  width: 107px;
+  margin-right: 246px;
+}
+
+.footer-contacts {
+  width: 350px;
+  margin-right: 238px;
+}
+
+.footer-academy {
+  margin-left: auto;
+  max-width: 115px;
 }
 
 .footer-contacts-address-phone {
