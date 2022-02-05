@@ -49,6 +49,24 @@ html {
   flex-grow: 1;
 }
 
+.main-index {
+  background-image: url("../images/index-background.jpg");
+  background-size: 1200px 485px;
+  background-repeat: no-repeat;
+}
+
+.main-inner {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 1200px 408px;
+  background-repeat: no-repeat;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 body {
   margin: 0;
   display: flex;
@@ -121,9 +139,14 @@ body {
   margin: 0 auto;
 }
 
+.navigation-logo {
+  width: 140px;
+  margin-right: 30px;
+}
+
 .navigation {
   display: flex;
-  width: 1060px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -160,24 +183,6 @@ body {
   text-decoration: none;
 }
 
-
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.main-index {
-  background-image: url("../images/index-background.jpg");
-  background-size: 1200px 485px;
-  background-repeat: no-repeat;
-}
-
-.container-inner {
-  background-image: url("../images/catalog-background.jpg");
-  background-size: 1200px 408px;
-  background-repeat: no-repeat;
-}
-
 /* Title*/
 
 .advantages-title {
@@ -194,8 +199,13 @@ body {
 }
 
 /* List */
-.advantages-list {
+.advantages-list-container {
   display: flex;
+  width: 1200px;
+ }
+
+.advantages-list {
+
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -228,7 +238,6 @@ body {
   background-color: var(--basic-color-white);
  }
 
-
 /* Title*/
 
 .catalog-filter-title {
@@ -236,7 +245,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-color-white);
-  background-color: var(--basic-color-black);
+  background-color: var(--accent-colour-blue);
 }
 
 .product-card-title {
@@ -255,7 +264,7 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: var(--basic-color-white);
-  background-color: var(--basic-color-black);
+  background-color: var(--accent-colour-blue);
 }
 
 
@@ -264,9 +273,26 @@ body {
   line-height: 23px;
   font-weight: 400;
   color: var(--basic-color-white);
-  background-color: var(--basic-color-black);
+  background-color: var(--accent-colour-blue);
 }
 
+.catalog-products {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.product-card-container {
+  display: flex;
+  width: 1058px;
+}
+
+.catalog-filter {
+  width: 157px;
+  margin-right: 60px;
+
+}
 
 /* Search*/
 
@@ -279,6 +305,13 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
+
+.hotels-search-container {
+  display: flex;
+  width: 1200px;
+}
+
+
 
 /* Newsletter*/
 
@@ -361,3 +394,16 @@ body {
   background-color: var(--accent-colour-gray);
 }
 
+.pagination-container {
+  display: flex;
+  width: 1058px;
+}
+
+.pagination {
+  width: 370px;
+  margin-right: 296px;
+}
+
+.select-control {
+  width: 390px;
+}
