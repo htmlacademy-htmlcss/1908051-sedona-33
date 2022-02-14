@@ -53,6 +53,8 @@
   <main class="main-container main-inner">
     <div class="page-container">
 
+    <div class="inner-header-container">
+
       <div class="container-header-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -67,7 +69,7 @@
         </header>
       </div>
 
-        <div class="catalog-products">
+        <div class="catalog-filter-container">
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -128,10 +130,11 @@
               <button class="button" type="reset">Сбросить</button>
           </form>
         </div>
+      </div>
 
 
         <!-- Результаты поиска -->
-        <section class="hotels-search">
+      <section class="hotels-search">
 
         <div class="hotels-search-container">
 
@@ -145,17 +148,17 @@
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="button" href="#">
-            <span class="visually-hidden-stroke">Показать карточки</span>
+
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать карточки</span>
           </a>
-          <a class="button" href="#">
+          <a href="#" class="button">
             <span class="visually-hidden">Показать слайдшоу</span>
           </a>
-          <a href="#" class="button button">
+          <a href="#" class="button">
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
-
         </div>
 
         <div class="product-card-container">
@@ -211,7 +214,7 @@
           <a class="button button-blue" href="#">Загрузить ещё</a>
         </div>
 
-          <div class="pagination-container">
+        <div class="pagination-container">
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -233,6 +236,7 @@
             </li>
           </ul>
 
+          <div class="select-control-group">
           <label for id="select-number">Гостиниц на странице:</label>
           <select class="select-control" aria-label="Сортировка" id="select-number">
             <option value="1">1</option>
@@ -240,6 +244,8 @@
             <option value="3">3</option>
             <option value="4" selected>4</option>
           </select>
+          </div>
+
           </div>
         </section>
 
