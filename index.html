@@ -29,6 +29,7 @@
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <div class="search-icon"></div>
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -36,13 +37,14 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <div class="card-icon card-number"></div>
                 <span class="visually-hidden">
                   Избранное
                 </span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+              <a class="button header-button" href="#">Хочу сюда</a>
             </li>
           </ul>
        </nav>
@@ -52,6 +54,13 @@
     <main class="main-container main-index">
       <div class="page-container">
        <div class="h1-container">
+
+         <!--Фоновые изображения-->
+        <!-- <div class="back-image">
+          <div class="img-welcome">
+              <div class="img-divider"></div>
+          </div>
+        </div> -->
         <h1 class="visually-hidden">Седона</h1>
        </div>
 
@@ -73,28 +82,33 @@
                   <div class="advantages-item-first-text">
                     <h3 class="advantages-item-title">Настоящий городок</h3>
                     <span class="advantages-description">— №1 —</span>
-                    <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    <p>Седона — не аттракцион для туристов, там течёт своя&nbsp;жизнь</p>
                   </div>
                 </div>
 
                 <!-- Вторая строка -->
                 <ul class="advantages-description-list">
                   <li class="advantages-item-second">
+                    <div class="hotels"></div>
                     <b>Жильё</b>
                     <p class="advantages-description-item">
-                      Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                      Рекомендуем пожить в&nbsp;настоящем мотеле, <br>
+                      всё как в&nbsp;кино!
                     </p>
                   </li>
                   <li class="advantages-item-second">
+                    <div class="food"></div>
                     <b>Еда</b>
                     <p class="advantages-description-item">
-                      Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                      Всегда заказывайте <br>
+                      топовый фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
                     </p>
                   </li>
                   <li class="advantages-item-second">
+                    <div class="souvenirs"></div>
                     <b>Сувениры</b>
                     <p class="advantages-description-item">
-                      Не только китайского, но и настоящего местного производства!
+                      Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!
                     </p>
                   </li>
                 </ul>
@@ -112,7 +126,6 @@
               </li>
 
               <!-- Четвертая строка -->
-              <!-- <div class="advantages-item-fourth"> -->
               <li class="advantages-item">
               <div class="advantages-fourth-container">
                 <div class="advantages-item-fourth">
@@ -122,8 +135,7 @@
                    <p>Все достопримечательности находятся очень близко</p>
                   </div>
                 </div>
-               <!-- </li>
-               <li class="advantages-item"> -->
+
                 <div class="advantages-item-fourth">
                   <div class="advantages-item-fourth-text">
                     <h3 class="advantages-item-title">Красивая <br>
@@ -132,9 +144,7 @@
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </div>
                 </div>
-               <!-- </li>
 
-               <li class="advantages-item"> -->
                 <div class="advantages-item-fourth">
                   <div class="advantages-item-fourth-text">
                     <h3 class="advantages-item-title">Мало <br>
@@ -154,16 +164,17 @@
         <!-- Поиск гостиниц -->
         <section class="search">
           <h2 class="search-title">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,
+          <p>Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-all" href="#">Поиск гостиницы в Седоне</a>
+          <a class="button hotels-search-button" href="#">Поиск гостиницы в Седоне</a>
         </section>
 
         <!-- Форма подписки -->
         <section class="newsletter">
           <div class="newsletter-container">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p>Только полезная информация и никакого спама, <br>
+            честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
@@ -180,17 +191,17 @@
         <div class="footer-social">
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <a class="button twitter" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="https://www.facebook.com/htmlacademy">
+                <a class="button facebook" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <a class="button youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
                   <span class="visually-hidden">Ютуб</span>
                 </a>
               </li>
