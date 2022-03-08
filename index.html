@@ -233,5 +233,43 @@
       </div>
     </footer>
 
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <svg width="13" height="13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label class="label-text" for="search-date-in">Дата заезда:</label>
+              <input class="search-form-field field" type="text" id="search-date-in" name="search-date-in" placeholder="27 апреля 2020">
+            </p>
+            <p class="field-group">
+              <label class="label-text" for="search-date-out">Дата выезда:</label>
+              <input class="search-form-field field" type="text" id="search-date-out" name="search-date-out" placeholder="1 сентября 2021">
+            </p>
+
+            <div class="adults-kids">
+            <p class="field-group">
+              <label class="label-text" for="adults">Взрослые:</label>
+              <input class="search-form-field field" type="text" id="adults" name="adults" placeholder="2">
+            </p>
+            <p class="field-group">
+              <label class="label-text" for="kids">Дети:</label>
+              <input class="search-form-field field" type="text" id="kids" name="kids" placeholder="1">
+            </p>
+          </div>
+
+            <a class="button search-form-button" href="#">Найти</a>
+          </form>
+
+        </section>
+      </div>
+    </div>
   </body>
 </html>

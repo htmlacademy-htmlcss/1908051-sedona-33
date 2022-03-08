@@ -2,20 +2,24 @@
   --basic-color-white: #ffffff;
   --basic-color-black: #000000;
   --basic-color-dark-gray: #333333;
-  --accent-colour-blue: #83B3D3;
-  --accent-colour-extra-light-blue :#f0f6fa;
-  --accent-colour-light-blue: #e6f0f6;
-  --accent-colour-gray: #F2F2F2;
-  --accent-colour-brown: #756257;
-  --accent-colour-green: #7DB54F;
-  --accent-colour-button-green: #98BB7A;
-  --accent-colour-hover-green: #6C9E42;
-  --accent-colour-hover-brown: #615048;
+  --basic-color-gray-form: #616161;
+  --basic-color-gray: #F2F2F2;
+  --basic-color-gray-hover-form: #E6E6E6;
+  --accent-color-blue: #83B3D3;
+  --accent-color-extra-light-blue :#f0f6fa;
+  --accent-color-light-blue: #e6f0f6;
+  --accent-color-hover-blue: #68A2CA;
+  --accent-color-button-blue: #95BEDA;
+  --accent-color-button-active-blue: #D2E4F0;
+  --accent-color-green: #7DB54F;
+  --accent-color-button-green: #98BB7A;
+  --accent-color-hover-green: #6C9E42;
+  --accent-color-brown: #756257;
+  --accent-color-hover-brown: #615048;
   --accent-color-button-brown: #90847F;
-  --accent-colour-hover-blue: #68A2CA;
-  --accent-colour-button-blue: #95BEDA;
-  --accent-colour-button-active-blue: #D2E4F0;
-  --accent-colour-button-active-brown: #D6D0CD;
+  --accent-color-button-active-brown: #D6D0CD;
+  --accent-color-invalid-red: #FF5757;
+  --accent-color-checkbox-blue: #3F5E72;
 }
 
 @font-face {
@@ -48,7 +52,6 @@
   src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
   font-display: swap;
 }
-
 
 html {
   height: 100%;
@@ -134,7 +137,7 @@ body {
   text-align: center;
   padding-top: 9px;
   color: var(--basic-color-white);
-  background-color: var(--accent-colour-brown);
+  background-color: var(--accent-color-brown);
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
@@ -158,32 +161,32 @@ body {
 
 .button:hover,
 .header-button:hover {
-  background-color: var(--accent-colour-hover-brown);
+  background-color: var(--accent-color-hover-brown);
 }
 
 .button:focus,
 .header-button:focus {
-  background-color: var(--accent-colour-hover-brown);
-  box-shadow: 0 0 0 3px var(--accent-colour-blue);
+  background-color: var(--accent-color-hover-brown);
+  box-shadow: 0 0 0 3px var(--accent-color-blue);
   outline: none;
 }
 
 .button:active,
 .header-button:active {
   color: var(--accent-color-button-brown);
-  background-color: var(--accent-colour-hover-brown);
+  background-color: var(--accent-color-hover-brown);
   box-shadow: none;
 }
 
 .newsletter-button {
-  /* display: inline-block; */
+  padding: 0;
   font-size: 20px;
-  line-height: 36px;
   width: 200px;
   height: 60px;
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   border-radius: 0px 10px 10px 0px;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .hotels-search-button {
@@ -202,7 +205,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   border-radius: 10px;
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   width: 620px;
   height: 60px;
   padding-top: 17px;
@@ -213,44 +216,48 @@ body {
 
 .download-all-button:hover,
 .newsletter-button:hover {
-  background-color: var(--accent-colour-hover-blue);
+  background-color: var(--accent-color-hover-blue);
 }
 
 .download-all-button:focus,
 .newsletter-button:focus {
-  background-color: var(--accent-colour-hover-blue);
-  box-shadow: 0 0 0 3px var(--accent-colour-brown);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: 0 0 0 3px var(--accent-color-brown);
   outline: none;
 }
 
 .download-all-button:active,
 .newsletter-button:active {
-  color: var(--accent-colour-button-blue);
-  background-color: var(--accent-colour-hover-blue);
+  color: var(--accent-color-button-blue);
+  background-color: var(--accent-color-hover-blue);
   box-shadow: none;
 }
 
 
 .button-blue-small {
   display: inline-block;
-  background-color: var(--accent-colour-blue);
+  /* display: flex; */
+  padding: 0;
+  margin: 0;
+  margin-top: 60px;
+  background-color: var(--accent-color-blue);
   min-height: 48px;
   min-width: 160px;
 }
 
 .button-blue-small:hover {
-  background-color: var(--accent-colour-hover-blue);
+  background-color: var(--accent-color-hover-blue);
 }
 
 .button-blue-small:focus {
-  background-color: var(--accent-colour-hover-blue);
+  background-color: var(--accent-color-hover-blue);
   box-shadow: 0 0 0 3px var(--basic-color-white);
   outline: none;
 }
 
 .button-blue-small:active {
-  color: var(--accent-colour-button-blue);
-  background-color: var(--accent-colour-hover-blue);
+  color: var(--accent-color-button-blue);
+  background-color: var(--accent-color-hover-blue);
   box-shadow: none;
 }
 
@@ -261,57 +268,82 @@ body {
 }
 
 .product-card-button-bag {
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   min-width: 140px;
 }
 
 .product-card-button-bag:hover {
-  background-color: var(--accent-colour-hover-blue);
-  box-shadow: inset 0 0 0 1px var(--accent-colour-brown);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: inset 0 0 0 1px var(--accent-color-brown);
 }
 
 .product-card-button-bag:focus {
-  background-color: var(--accent-colour-hover-blue);
-  box-shadow: 0 0 0 3px var(--accent-colour-brown);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: 0 0 0 3px var(--accent-color-brown);
   outline: none;
 }
 
 .product-card-button-bag:active {
-  color: var(--accent-colour-button-blue);
-  background-color: var(--accent-colour-hover-blue);
-  box-shadow: inset 0 0 0 1px var(--accent-colour-brown);
+  color: var(--accent-color-button-blue);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: inset 0 0 0 1px var(--accent-color-brown);
 }
 
 .product-card-button-bag-active {
-  background-color: var(--accent-colour-green);
+  background-color: var(--accent-color-green);
   min-width: 140px;
 }
 
 .product-card-button-bag-active:hover {
-  background-color: var(--accent-colour-hover-green);
+  background-color: var(--accent-color-hover-green);
 }
 
 .product-card-button-bag-active:focus {
-  background-color: var(--accent-colour-hover-green);
-  box-shadow: 0 0 0 3px var(--accent-colour-brown);
+  background-color: var(--accent-color-hover-green);
+  box-shadow: 0 0 0 3px var(--accent-color-brown);
   outline: none;
 }
 
 .product-card-button-bag-active:active {
-  color: var(--accent-colour-button-green);
-  background-color: var(--accent-colour-hover-green);
+  color: var(--accent-color-button-green);
+  background-color: var(--accent-color-hover-green);
   box-shadow: none;
 }
 
 .reset {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
   font-size: 18px;
-  line-height: 23px;
   font-weight: 400;
   color: var(--basic-color-white);
+  background-color: transparent;
   text-decoration: none;
   text-transform: none;
+  margin-top: 20px;
+  text-align: center;
+  width: 100px;
+  height: 32px;
+  padding-top: 8px;
+  box-sizing: border-box;
 }
 
+.reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.reset:focus {
+  color: var(--basic-color-white);
+  box-shadow: inset 0 0 3px 0 var(--accent-color-blue);
+  background-color: transparent;
+}
+
+.reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+}
 
 /* Navigation */
 
@@ -332,6 +364,7 @@ body {
 
 .navigation-icon {
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -352,7 +385,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 360px;
+  max-width: 390px;
   list-style-type: none;
   min-width: 345px;
 }
@@ -373,7 +406,7 @@ body {
 
 .card-number {
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   top: 15px;
   width: 20px;
   height: 20px;
@@ -395,11 +428,11 @@ body {
 }
 
 .navigation-link:hover .navigation-icon {
-  fill: var(--accent-colour-brown);
+  fill: var(--accent-color-brown);
 }
 
 .navigation-link:hover {
-  color: var(--accent-colour-brown);
+  color: var(--accent-color-brown);
 }
 
 .navigation-link-current::before {
@@ -408,7 +441,7 @@ body {
   bottom: 0;
   left: 17px;
   height: 2px;
-  background-color: var(--accent-colour-brown);
+  background-color: var(--accent-color-brown);
   content: "";
 }
 
@@ -426,7 +459,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  margin: 63px auto 79px auto;
+  margin: 63px auto 80px auto;
   min-height: 140px;
   padding: 0 240px;
   box-sizing: border-box;
@@ -449,7 +482,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 0 23px 0;
+  padding: 0 0 31px 0;
 }
 
 .advantages-item-title {
@@ -494,7 +527,7 @@ body {
   width: 100%;
   min-height: 384px;
   background-image: url("../images/advantages_town.jpg");
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   color: var(--basic-color-white);
   background-size: 800px 384px;
   background-repeat: no-repeat;
@@ -506,7 +539,6 @@ body {
   padding: 0 90px;
   text-align: center;
 }
-
 
 .advantages-description-list {
   width: 100%;
@@ -521,7 +553,8 @@ body {
   display: block;
   width: 400px;
   min-height: 384px;
-  background: var(--accent-colour-extra-light-blue);
+  color: var(--basic-color-dark-gray);
+  background: var(--accent-color-extra-light-blue);
   width: 250px;
   padding: 0px 75px 0 75px;
 }
@@ -530,9 +563,10 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: var(--basic-color-black);
 }
 
-  .advantages-item-second:nth-child(2) {
+.advantages-item-second:nth-child(2) {
   background-color: var(--basic-color-white);
 }
 
@@ -542,7 +576,7 @@ body {
   width: 100%;
   min-height: 384px;
   background-image: url("../images/devils_bridge.jpg");
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   color: var(--basic-color-white);
   background-size: 800px 384px;
   background-repeat: no-repeat;
@@ -553,7 +587,6 @@ body {
   width: 220px;
   padding: 0 90px;
 }
-
 
 .advantages-fourth-container {
   width: 100%;
@@ -567,13 +600,18 @@ body {
 .advantages-item-fourth {
   display: block;
   min-height: 384px;
-  background: var(--accent-colour-extra-light-blue);
+  color: var(--basic-color-dark-gray);
+  background: var(--accent-color-extra-light-blue);
   width: 250px;
   padding: 0 75px;
 }
 
 .advantages-item-fourth:nth-child(2) {
-  background-color: var(--accent-colour-light-blue);
+  background-color: var(--accent-color-light-blue);
+}
+
+.advantages-item-fourth .advantages-item-title{
+  color: var(--basic-color-black);
 }
 
 .hotels {
@@ -707,6 +745,9 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: var(--basic-color-white);
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
 }
 
 .catalog-filter-list {
@@ -721,6 +762,169 @@ body {
   color: var(--basic-color-white);
   list-style-type: none;
   width: 150px;
+}
+
+/* Group */
+.catalog-filter-group {
+  margin: 0;
+  margin-right: 65px;
+  padding: 0;
+  border: none;
+}
+
+/* Control */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.catalog-filter-group .booking{
+  min-width: 246px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--basic-color-white);
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:focus .control-mark {
+  opacity: 0.6;
+  outline: 3px solid var(--accent-color-blue);
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/checkbox.svg);
+  background-size: 12px 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-color-checkbox-blue);
+  border-radius: 50%;
+  content: "";
+}
+
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* opacity: 0.3; */
+  min-width: 287px
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: var(--basic-color-white);
+  opacity: 1;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--basic-color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid var(--accent-color-blue);
+}
+
+.range-toggle:active {
+  box-shadow: 0 7px 15px 0px rgba(0, 0, 0, 0.40);
+  outline: 2px solid var(--accent-color-blue);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+}
+
+.range-input {
+  width: 145px;
+  box-sizing: border-box;
+  padding: 14px 14px 11px 19px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-color-white);
+  background-color: transparent;
+  box-shadow: inset 0 0 2px 0 var(--basic-color-white);
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.price-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  width: 160px;
+  /* padding-top: 60px;
+  margin-top: 60px; */
 }
 
 
@@ -750,12 +954,44 @@ body {
 
 .sorting-container {
   display: flex;
+  width: 528px;
+  justify-content: space-between;
 }
 
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* width: 287px; */
+  margin-right: auto;
+}
+
+/* Control */
 .select-control {
-  width: 287px;
-  height: 48px;
+  width: 100%;
+  padding: 12px 19px;
+  padding-right: 48px;
+  font: inherit;
+  color: var(--basic-color-dark-gray);
+  background-color: var(--basic-color-white);
+  border: 2px solid var(--basic-color-gray-hover-form);
+  background-image: url("../images/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+  border-radius: 4px;
   margin-right: 73px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: var(--accent-color-blue);
+}
+
+.select-control:active {
+  color: var(--basic-color-gray-hover-form);
+  border-color: var(--basic-color-gray-hover-form);
+  outline: none;
 }
 
 .card-grid-toggle {
@@ -764,7 +1000,7 @@ body {
   margin-left: 8px;
   padding-top: 15px;
   background-color: var(--basic-color-white);
-  border: solid var(--accent-colour-gray) 2px;
+  border: solid var(--basic-color-gray) 2px;
   box-sizing: border-box;
   border-radius: 4px;
   justify-content: center;
@@ -776,11 +1012,11 @@ body {
 }
 
 .card-grid-toggle:hover {
-  border: solid var(--accent-colour-blue) 2px;
+  border: solid var(--accent-color-blue) 2px;
 }
 
 .card-grid-toggle:focus {
-  border: solid var(--accent-colour-blue) 2px;
+  border: solid var(--accent-color-blue) 2px;
   outline: none;
 }
 
@@ -818,13 +1054,16 @@ body {
   justify-content: center;
   width: 300px;
   height: 206px;
-
   margin: 0;
   padding: 0;
   text-decoration: none;
   vertical-align: top;
 }
 
+.product-card-1,
+.product-card-3 {
+  color: var(--basic-color-dark-gray);
+}
 
 .product-card-1 {
   display: flex;
@@ -847,14 +1086,13 @@ body {
   justify-content: space-between;
 }
 
-
 .product-card-image:hover {
   opacity: .6;
 }
 
 .product-card-image:focus {
   opacity: 1;
-  box-shadow: 0 0 0 3px var(--accent-colour-blue);
+  box-shadow: 0 0 0 3px var(--accent-color-blue);
   box-sizing: 0;
   outline: none;
 }
@@ -887,23 +1125,22 @@ body {
     background-size: 25px 17px;
     background-repeat: repeat-x;
     background-position: -4px center;
-  }
+}
 
+.stars-three {
+   width: 75px;
+}
 
-  .stars-three {
-    width: 75px;
-  }
-
-  .stars-two {
-    width: 50px;
-  }
+.stars-two {
+  width: 50px;
+}
 
 .product-card-rating {
   display: block;
   width: 160px;
   height: 37px;
   font-size: 16px;
-  background-color: var(--accent-colour-gray);
+  background-color: var(--basic-color-gray);
   text-transform: uppercase;
   text-align: center;
   padding-top: 9px;
@@ -935,8 +1172,8 @@ body {
 .search p {
   margin: 0;
   padding: 0;
-  margin-top: 26px;
-  margin-bottom: 52px;
+  margin-top: 29px;
+  margin-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   color: var(--basic-color-dark-gray);
@@ -950,7 +1187,7 @@ body {
   flex-direction: column;
   width: 1200px;
   min-height: 411px;
-  padding: 0 240px;
+  padding: 0 200px;
   box-sizing: border-box;
 }
 
@@ -960,13 +1197,12 @@ body {
   flex-direction: column;
   width: 1200px;
   min-height: 224px;
-  padding: 0 200px 141px 200px;
+  padding: 0 200px 140px 200px;
   box-sizing: border-box;
 }
 
 .newsletter {
   text-align: center;
-  color: var(--basic-color-white);
   background-color: var(--basic-color-black);
   background-image: url("../images/newsletter_background.jpg");
   background-size: 1200px 411px;
@@ -978,13 +1214,6 @@ body {
 .newsletter-inner {
   text-align: center;
 }
-
-.newsletter-form {
-  display: flex;
-
-  /* outline: 5px solid #ff6347; */
-}
-
 
 .newsletter-title {
   font-size: 30px;
@@ -1008,12 +1237,13 @@ body {
 .newsletter p {
   margin: 0;
   padding: 0;
-  margin-top: 26px;
-  margin-bottom: 52px;
+  margin-top: 29px;
+  margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
   padding-left: 40px;
   padding-right: 40px;
+  color: var(--basic-color-white);
 }
 
 .newsletter-inner p {
@@ -1023,8 +1253,54 @@ body {
   line-height: 26px;
   padding-left: 40px;
   padding-right: 40px;
+  color: var(--basic-color-dark-gray);
 }
 
+.newsletter-email {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+/* Field */
+.field {
+  margin: 0;
+  padding: 19px 22px;
+  font: inherit;
+  background-color: var(--basic-color-gray);
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+/* Hover, Focus */
+.field:hover,
+.field:focus {
+  background-color: var(--basic-color-gray-hover-form);
+}
+
+.field:focus {
+  outline: 3px solid var(--accent-color-blue);
+}
+
+/* Invalid */
+.field:invalid {
+  box-shadow: none;
+}
+
+.field:focus:invalid {
+  outline: inset 2px solid var(--accent-color-invalid-red);
+}
+
+/* Placeholder */
+.field::placeholder {
+  color: var(--basic-color-black);
+  opacity: 0.6;
+}
 
 /* Footer*/
 
@@ -1088,22 +1364,22 @@ body {
 }
 
 .footer-social-icon {
-  fill: var(--accent-colour-blue);
+  fill: var(--accent-color-blue);
 }
 
 .footer-social-icon:hover {
-  fill: var(--accent-colour-hover-blue);
+  fill: var(--accent-color-hover-blue);
 }
 
 .footer-social-icon:focus {
-  box-shadow: inset 0 0 0 3px var(--accent-colour-hover-blue);
+  box-shadow: inset 0 0 0 3px var(--accent-color-hover-blue);
   border-radius: 10px;
-  fill: var(--accent-colour-hover-blue);
+  fill: var(--accent-color-hover-blue);
   outline: none;
 }
 
 .footer-social-icon:active {
-  fill: var(--accent-colour-button-active-blue);
+  fill: var(--accent-color-button-active-blue);
   outline: none;
   box-shadow: none;
 }
@@ -1129,18 +1405,18 @@ body {
 }
 
 .footer-contacts-address-phone:hover {
-  color: var(--accent-colour-brown);
+  color: var(--accent-color-brown);
 }
 
 .footer-contacts-address-phone:focus {
-  box-shadow: inset 0 0 0 3px var(--accent-colour-hover-blue);
+  box-shadow: inset 0 0 0 3px var(--accent-color-hover-blue);
   border-radius: 10px;
-  color: var(--accent-colour-brown);
+  color: var(--accent-color-brown);
   outline: none;
 }
 
 .footer-contacts-address-phone:active {
-  color: var(--accent-colour-button-active-brown);
+  color: var(--accent-color-button-active-brown);
   box-shadow: none;
 }
 
@@ -1164,21 +1440,165 @@ body {
 }
 
 .footer-academy-logo:hover {
-  fill: var(--accent-colour-brown);
+  fill: var(--accent-color-brown);
 }
 
 .footer-academy-logo:focus {
-  box-shadow: inset 0 0 0 3px var(--accent-colour-hover-blue);
+  box-shadow: inset 0 0 0 3px var(--accent-color-hover-blue);
   border-radius: 10px;
-  fill: var(--accent-colour-brown);
+  fill: var(--accent-color-brown);
   outline: none;
 }
 
 .footer-academy-logo:active {
-  fill: var(--accent-colour-button-active-brown);
+  fill: var(--accent-color-button-active-brown);
   box-shadow: none;
 }
 
+/* Modal */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);;
+  /* opacity: 0.8; */
+  /* z-index: 1; */
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 52px 70px 70px 70px;
+  background-color: var(--basic-color-white);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-search {
+  width: 575px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  border: none;
+  background-color: var(--basic-color-gray);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus,
+.modal-close-button:active {
+  background-color: var(--basic-color-gray-hover-form);
+}
+
+.modal-close-button:focus {
+  border: 3px solid var(--accent-color-blue);
+}
+
+.modal-close-button:active {
+  fill: #A1A1A1;
+  border: none;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 54px;
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--basic-color-black);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.search-form .field-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: var(--basic-color-black);
+}
+
+.search-form-user-options {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.search-form-user-options .control-label {
+  font-weight: 700;
+}
+
+.search-form .field {
+  width: 420px;
+  height: 50px;
+  margin-left: auto;
+  border-radius: 4px;
+  padding: 14px 19px;
+}
+
+
+.adults-kids {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.search-form #kids,
+.search-form #adults {
+  width: 133px;
+}
+
+.search-form #adults {
+  margin-left: 72px;
+  margin-right: 56px;
+}
+
+.search-form #kids {
+  margin-left: 53px;
+}
+
+
+.search-form-button {
+  font-size: 20px;
+  line-height: 26px;
+  background-color: var(--accent-color-blue);
+  border-radius: 10px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.search-form-button:hover {
+  background-color: var(--accent-color-hover-blue);
+}
+
+.search-form-button:focus {
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: 0 0 0 3px var(--accent-color-brown);
+  outline: none;
+}
+
+.search-form-button:active {
+  color: var(--accent-color-button-blue);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: none;
+}
+
+.modal-container-close {
+  display: none;
+}
 
 /* Link */
 
@@ -1208,7 +1628,7 @@ body {
   height: 55px;
   padding: 20px 16px;
   color: var(--basic-color-white);
-  background-color: var(--accent-colour-blue);
+  background-color: var(--accent-color-blue);
   text-decoration: none;
   text-align: center;
   line-height: 20px;
@@ -1217,18 +1637,18 @@ body {
 }
 
 .pagination-link:hover {
-  background-color: var(--accent-colour-hover-blue);
+  background-color: var(--accent-color-hover-blue);
 }
 
 .pagination-link:focus {
-  background-color: var(--accent-colour-hover-blue);
-  box-shadow: 0 0 0 3px var(--accent-colour-brown);
+  background-color: var(--accent-color-hover-blue);
+  box-shadow: 0 0 0 3px var(--accent-color-brown);
   outline: none;
 }
 
 .pagination-link:active {
-  color: var(--accent-colour-button-blue);
-  background-color: var(--accent-colour-hover-blue);
+  color: var(--accent-color-button-blue);
+  background-color: var(--accent-color-hover-blue);
   box-shadow: none;
 }
 
@@ -1239,23 +1659,23 @@ body {
 
 .pagination-current {
   color: var(--basic-color-black);
-  background-color: var(--accent-colour-gray);
+  background-color: var(--basic-color-gray);
   box-shadow: none;
 }
 
 .pagination-current:hover {
   color: var(--basic-color-black);
-  background-color: var(--accent-colour-gray);
+  background-color: var(--basic-color-gray);
 }
 
 .pagination-current:focus {
   color: var(--basic-color-black);
-  background-color: var(--accent-colour-gray);
+  background-color: var(--basic-color-gray);
 }
 
 .pagination-current:active {
   color: var(--basic-color-black);
-  background-color: var(--accent-colour-gray);
+  background-color: var(--basic-color-gray);
 }
 
 .select-control-group {
@@ -1263,18 +1683,19 @@ body {
   margin: 0;
   padding: 0;
   width: 386px;
+  color: var(--basic-color-dark-gray);
 }
 
-#select-number {
-  min-width: 175px;
-  margin-right: 51px;
-}
-
-.select-control {
+.view-hotel-numbers {
   width: 160px;
-  height: 48px;
-  padding: 0;
   margin: 0;
+  margin-left: 51px;
+}
+
+.select-control-group label {
+  min-width: 175px;
+  vertical-align: bottom;
+  padding-top: 16px;
 }
 
 /* Button download all */
