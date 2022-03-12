@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/outline.css">
   </head>
 
   <body>
@@ -233,7 +232,8 @@
       </div>
     </footer>
 
-    <div class="modal-container modal-container-close">
+    <!-- modal-container-close -->
+    <div class="modal-container  ">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <svg width="13" height="13" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13">
@@ -255,12 +255,21 @@
             </p>
 
             <div class="adults-kids">
+              <button type="button" class="range-passengers minus"></button>
             <p class="field-group">
               <label class="label-text" for="adults">Взрослые:</label>
               <input class="search-form-field field" type="text" id="adults" name="adults" placeholder="2">
             </p>
             <p class="field-group">
-              <label class="label-text" for="kids">Дети:</label>
+              <span class="form-label form-label-icon">
+                <label class="label-text" for="kids">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"><path d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"/><path d="M12 17H13V11H12V17Z" fill="white"/><path d="M13 8H12V9H13V8Z" fill="white"/></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <input class="search-form-field field" type="text" id="kids" name="kids" placeholder="1">
             </p>
           </div>
