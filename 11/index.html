@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/outline.css">
     <base href="https://htmlacademy-htmlcss.github.io/1908051-sedona-33/11/">
 </head>
 
@@ -234,6 +233,7 @@
       </div>
     </footer>
 
+    <!-- modal-container-close -->
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <button class="modal-close-button">
@@ -246,22 +246,62 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
+            <p class="field-group date-field">
               <label class="label-text" for="search-date-in">Дата заезда:</label>
               <input class="search-form-field field" type="text" id="search-date-in" name="search-date-in" placeholder="27 апреля 2020">
             </p>
-            <p class="field-group">
+            <span class="modal-text invalid">Мы не можем отправить вас в прошлое.</span>
+
+            <p class="field-group date-field">
               <label class="label-text" for="search-date-out">Дата выезда:</label>
               <input class="search-form-field field" type="text" id="search-date-out" name="search-date-out" placeholder="1 сентября 2021">
             </p>
+            <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
 
             <div class="adults-kids">
-            <p class="field-group">
+            <p class="field-group adults-field">
+
+              <span class="adults-minus">
+                <button class="range-adults-button" type="button">
+                  <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"><path d="M0 6L0 7L13 7V6L0 6Z"/></svg>
+                </button>
+              </span>
+
               <label class="label-text" for="adults">Взрослые:</label>
+
+              <span class="adults-plus">
+                <button class="range-adults-button" type="button">
+                  <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></svg>
+                </button>
+              </span>
+
               <input class="search-form-field field" type="text" id="adults" name="adults" placeholder="2">
             </p>
-            <p class="field-group">
-              <label class="label-text" for="kids">Дети:</label>
+
+            <p class="field-group kids-field">
+              <span class="form-label form-label-icon">
+
+                <span class="kids-minus">
+                  <button class="range-kids-button" type="button">
+                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"><path d="M0 6L0 7L13 7V6L0 6Z"/></svg>
+                  </button>
+                </span>
+
+                <label class="label-text" for="kids">Дети:</label>
+
+                <span class="kids-plus">
+                  <button class="range-kids-button" type="button">
+                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"><path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z"/></svg>
+                  </button>
+                </span>
+
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"><path d="M25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0C19.4036 0 25 5.59644 25 12.5Z"/><path d="M12 17H13V11H12V17Z" fill="white"/><path d="M13 8H12V9H13V8Z" fill="white"/></svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <input class="search-form-field field" type="text" id="kids" name="kids" placeholder="1">
             </p>
           </div>
