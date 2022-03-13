@@ -55,7 +55,7 @@
       </div>
     </header>
 
-    <!-- Гостиницы -->
+  <!-- Гостиницы -->
   <main class="main-container main-inner">
     <div class="page-container">
 
@@ -64,20 +64,21 @@
       <div class="container-header-inner">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <!-- Хлебные крошки -->
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">
-                <div class="breadcrumbs-home"></div>
+                <svg class="breadcrumbs-home-icon" aria-hidden="true" focusable="false" width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/>
+                </svg>
                 <span class="visually-hidden">
                   Главная
                 </span>
               </a>
             </li>
+
             <li class="breadcrumbs-item">
-              <div class="breadcrumbs-arrow"></div>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -94,7 +95,6 @@
                     <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
-
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -102,7 +102,6 @@
                     <input class="visually-hidden control-input" type="checkbox" name="parcking" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
-
                   </label>
                 </li>
                 <li class="catalog-filter-item">
@@ -110,7 +109,6 @@
                     <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-Fi</span>
-
                   </label>
                 </li>
 
@@ -127,6 +125,7 @@
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
+
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
@@ -134,6 +133,7 @@
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
+
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="radio" name="product-group" value="apartments">
@@ -149,12 +149,20 @@
                 <div class="range">
 
                   <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label">
-                      от <input class="range-input price-min" type="number" value="0" name="min-price">
-                    </label>
-                    <label class="catalog-filter-label">
-                      до <input class="range-input price-max" type="number" value="9000" name="max-price">
-                    </label>
+
+                    <div class="range-wrapper">
+                      <span>от</span>
+                      <label class="catalog-filter-label">
+                        <input class="range-input price-min" type="number" value="0" name="min-price">
+                      </label>
+                     </div>
+
+                    <div class="range-wrapper">
+                      <span>до</span>
+                      <label class="catalog-filter-label">
+                        <input class="range-input price-max" type="number" value="9000" name="max-price">
+                      </label>
+                    </div>
                   </div>
 
                   <div class="range-scale">
