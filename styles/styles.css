@@ -188,7 +188,7 @@ body {
   line-height: 34px;
   border-radius: 10px;
   padding-top: 15px;
-  height: 60px;
+  min-height: 60px;
 }
 
 .download-all-button {
@@ -197,7 +197,7 @@ body {
   border-radius: 10px;
   background-color: var(--accent-color-blue);
   width: 620px;
-  height: 60px;
+  min-height: 60px;
   padding-top: 17px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -570,11 +570,11 @@ body {
 .advantages-item-second {
   display: block;
   width: 400px;
-  min-height: 384px;
+  min-height: 199px;
   color: var(--basic-color-dark-gray);
   background: var(--accent-color-extra-light-blue);
   width: 250px;
-  padding: 0px 75px 0 75px;
+  padding: 185px 75px 0 75px;
 }
 
 .advantages-item-second b {
@@ -588,8 +588,26 @@ body {
   padding-top: 19px;
 }
 
+.advantages-item-second:first-child {
+  background-image: url("../images/hotels.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center 89px;
+}
+
 .advantages-item-second:nth-child(2) {
   background-color: var(--basic-color-white);
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: center 91px;
+}
+
+.advantages-item-second:last-child {
+  background-image: url("../images/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: center 85px;
 }
 
 .advantages-item-third {
@@ -637,36 +655,6 @@ body {
 .advantages-item-fourth .advantages-item-title{
   color: var(--basic-color-black);
   padding-bottom: 29px;
-}
-
-.hotels {
-  display: flex;
-  margin: 0 auto;
-  width: 75px;
-  height: 72px;
-  background-image: url("../images/hotels.svg");
-  margin-bottom: 24px;
-  margin-top: 89px;
-}
-
-.food {
-  display: flex;
-  margin: 0 auto;
-  width: 74px;
-  height: 70px;
-  background-image: url("../images/food.svg");
-  margin-bottom: 24px;
-  margin-top: 91px;
-}
-
-.souvenirs {
-  display: flex;
-  margin: 0 auto;
-  width: 64px;
-  height: 76px;
-  background-image: url("../images/souvenirs.svg");
-  margin-bottom: 24px;
-  margin-top: 85px;
 }
 
 /* Catalog*/
@@ -1812,7 +1800,6 @@ body {
   margin-left: 2px;
   width: 13px;
   height: 13px;
-
 }
 
 .kids-plus {
